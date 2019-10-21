@@ -1,0 +1,236 @@
+{
+  "title": "Nick Meincken",
+  "subtitle": "Front End Developer",
+  "PersonalInformation": {
+    "sectiontitle": "Personal Information",
+    "articletitle": "Personal Profile",
+    "articlecontent": [
+      {
+        "content": "I am an experienced AEM Front End Developer.  I specialise in creating clean semantic code to ensure fast loadtimes.  I follow atomic design principles where possible and develop style guides to ensure consistant and rapid develpment when working as part of a team.  I am as comfortable coding in raw HTML as I am using products such as React."
+      },
+      {
+        "content": "I enjoy working as part of an Agile team and have worked on some of the countries largest ecommerce sites."
+      }
+    ]
+  },
+  "professionalSkills": {
+    "sectiontitle": "Professional Skills",
+    "qualifications": {
+      "segmentHeading": "Qualifications",
+      "list": [
+        {
+          "item": "Adobe Training Center (2015)",
+          "strong": "AEM Sites developer"
+        },
+        {
+          "item": "The Community College Hackney (2006)",
+          "strong": "BTEC Web Authoring Level II (distinction)"
+        },
+        {
+          "item": "Spelthorne College, Middlesex (1997)",
+          "strong": "BTEC Photography & Business Skills"
+        },
+        {
+          "item": "Ashford High School (1994)",
+          "strong": "6 GCSEs including Maths, English and Science"
+        }
+      ]
+    },
+    "techskills": {
+      "segmentHeading": "Technical Skills",
+      "list": [
+        { "item": "Adobe CC, Sketch" },
+        { "item": "CSS and HTML editing using text editor" },
+        { "item": "HTML5, CSS3, JavaScript (jQuery, ES6), PHP" },
+        { "item": "Mac oSX, Linux and Windows compliant" },
+        { "item": "CMS's - Wordpress, AEM, Jekyll" },
+        { "item": "CSS frameworks - Bootstrap, Skeleton, Foundation" },
+        { "item": "SASS, PostCSS, Grunt, Gulp, Webpack, Parcel" },
+        { "item": "JS frameworks - React" }
+      ]
+    }
+  },
+  "professionalExperience": {
+    "sectiontitle": "Contractor History",
+    "experience": [
+      {
+        "class": "six",
+        "company": "Signal Noise",
+        "role": "Front End Developer",
+        "date": "August 2019 - September 2019",
+        "description": "Building AEM components for Siemens using postcss and PatternLab. This project contained the use of Stylelint, PostCSS and BEM within Gulp. It drew in a lot of style rules from other projects created by Signal Noise for Siemens.",
+        "list": [
+          { "item": "PostCSS, Stylelint, BEM" },
+          { "item": "PatternLab, Handlebars" },
+          { "item": "React, Bootstrap, GIT" }
+        ]
+      },
+      {
+        "class": "six",
+        "company": "Pomegranate",
+        "role": "Front End Developer",
+        "date": "July 2019 - August 2019",
+        "description": "Building components around the bootstrap framework for a Medical website utilising Handlebars, LESS and jQuery. Sample components and page templates for a CMS. Built the base for reusable components and sections.",
+        "list": [
+          { "item": "Less, Gulp" },
+          { "item": "Handlebars, GIT" },
+          { "item": "Bootstrap, HTML templates" }
+        ]
+      },
+      {
+        "class": "twelve",
+        "company": "BT",
+        "role": "Front end developer",
+        "date": "May 2018 - June 2019",
+        "description": "BT is a globally recognized telecoms brand. I have been working as part of the Marketing, Brand and Data teams in rebuilding their email templates in AEM for integration into ACM. My main task has been migrating and updating the email templates within AEM to be responsive with more control for the user. I have also worked on a number microsites for campaigns within ACM (Adobe Campaign).",
+        "list": [
+          {
+            "item": "AEM, ACM, GIT"
+          },
+          {
+            "item": "Granite UI, Touch UI, HTL"
+          },
+          {
+            "item": "Mustache, Grunt, Node"
+          },
+          {
+            "item": "SCSS, VanillaJS"
+          },
+          {
+            "item": "Email Development/Styleguide"
+          },
+          {
+            "item": "Agile, Workfront"
+          }
+        ]
+      }
+    ]
+  },
+  "professionalExperienceCont": {
+    "experience": [
+      {
+        "class": "six",
+        "company": "GTA Travel",
+        "role": "Front End UI Developer",
+        "date": "January 2018 - May 2018",
+        "description": "GTA Travel have been powering global travel for 40 years. I came on board as part of the marketing team to work on marketing projects and general site optimisation. I am also part of a wider group that has been tasked to create new components and develop a style guide for the site.",
+        "list": [
+          { "item": "SCSS, React, ATG, Jira, GIT" },
+          { "item": "Sketch, PhotoShop, InDesign" },
+          { "item": "RESTful API, Handlebars, WebPack/Gulp" }
+        ]
+      },
+      {
+        "class": "six",
+        "company": "Matter of Form",
+        "role": "Front End Developer",
+        "date": "May 2017 - October 2017",
+        "description": "Working as part of a small agile development team in Old Street on a high quality, design led project updating a boutique travel website. Building on modular patterns for CSS, JS and HTML for a CMS.",
+        "list": [
+          { "item": "SCSS, jQuery, jQueryUI, Jira, GIT" },
+          { "item": "Sketch, Handlebars, WebPack" },
+          { "item": "Responsive component design" }
+        ]
+      },
+      {
+        "class": "six",
+        "company": "MerchantCantos",
+        "role": "Front End Developer",
+        "date": "January 2017 - February 2017 & March 2017",
+        "description": "Working as part of a small development team building custom websites for corporate finance using .Net and Umbraco. Support for existing websites and updating an older site to newer code base.",
+        "list": [
+          { "item": "SCSS, jQuery" },
+          { "item": "Umbraco" },
+          { "item": "Responsive design" }
+        ]
+      },
+      {
+        "class": "six right",
+        "company": "Rapha",
+        "role": "Front End Developer",
+        "date": "September 2016 - November 2016",
+        "description": "Cleaning up the code base of this prestige clothing brand and general site and performance improvements as well as building the new about pages on Wordpress and the updated Cycle Club section.",
+        "list": [
+          { "item": "SCSS, jQuery, Java" },
+          { "item": "Hybris CMS/Wordpress" },
+          { "item": "Responsive design" }
+        ]
+      },
+      {
+        "class": "twelve",
+        "company": "We Are Social",
+        "role": "Front End Developer",
+        "date": "September 2016",
+        "description": "Microsite for Blind Pig Cider using Wordpress with custom fields and utilising a mobile first design principle as well as improving the mixins for SCSS.",
+        "list": [
+          { "item": "Custom Wordpress components" },
+          { "item": "Responsive design" },
+          { "item": "PHP, SCSS, jQuery" },
+          { "item": "PictureFill, CSS3, HTML5" }
+        ]
+      },
+      {
+        "class": "twelve",
+        "company": "Virgin Media",
+        "role": "Front End Developer",
+        "date": "November 2009 - August 2016",
+        "description": "One of the UK's leading entertainment and communication providers, I was a member of a team of developers working on moving Virgin Media to a fully responsive website and migrating from multiple instances of CQ5 to a single version of AEM6. First hand experience with AEM adapting many of the core components within AEM to modified and customised versions specifically for Virgin Media, as well as custom components.",
+        "list": [
+          { "item": "Building components for AEM" },
+          { "item": "Usage of HTML5, jQuery and CSS3" },
+          { "item": "Building online styleguide" },
+          { "item": "Tactical and Strategic redesign HTML" },
+          { "item": "Agile work process" },
+          { "item": "Responsive and Adaptive builds" }
+        ]
+      }
+    ]
+  },
+  "softskills": {
+    "sectiontitle": "Soft Skills",
+    "list": [
+      { "item": "Agile work process" },
+      { "item": "Good communication skills" },
+      { "item": "Can work to tight deadlines" },
+      { "item": "Motivated self-starter" },
+      { "item": "Good team player" },
+      { "item": "Independently minded" }
+    ]
+  },
+  "personal": {
+    "sectiontitle": "Personal",
+    "list": [
+      { "item": "Date of Birth: April 1978" },
+      { "item": "Nationality: British" },
+      { "item": "Marital Status: Married" },
+      { "item": "Address: Surbiton, Surrey" }
+    ]
+  },
+  "sites": [
+    {
+      "url": "http://www.virginmedia.com/",
+      "title": "Virgin Media",
+      "description": "Front end development, Styleguide, Dev toolkit, AEM/CQ5, HTML5, CSS3 and jQuery"
+    },
+    {
+      "url": "http://www.builtbymoustache.com/",
+      "title": "Built By Moustache",
+      "description": "My business site, built using Jekyll single page"
+    },
+    {
+      "url": "http://github.com/meincken",
+      "title": "Meincken GitHub",
+      "description": "My GitHub space"
+    }
+  ],
+  "additional": {
+    "sectiontitle": "Additional Information",
+    "content": "I am a certified PADI DiveMaster and hold the Emergency First Responder certificate.",
+    "list": [
+      {
+        "title": "Other hobbies include:",
+        "description": "Cycling, Photography, Travelling and my outstanding Moustache."
+      }
+    ]
+  }
+}

@@ -1,0 +1,63 @@
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #1e1e1e;
+  background: #1e1e1e;
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 auto;
+  max-width: 1040px;
+  width: 90%;
+}
+
+.row .row {
+  width: 100%;
+}
+
+.row .three {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .row .three {
+    width: 24%;
+  }
+}
+
+.row .six {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .row .six {
+    width: 49%;
+  }
+}
+
+.row .nine {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .row .nine {
+    width: 74%;
+  }
+}
+
+.row .twelve {
+  width: 100%;
+}
+
+.education,
+.work {
+  border-bottom: 1px solid #e1e1e1;
+  margin-bottom: 48px;
+  padding-bottom: 24px;
+}
+
+.headerCol {
+  padding-top: 9px;
+  padding-bottom: 20px;
+}

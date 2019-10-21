@@ -1,0 +1,94 @@
+h1 {
+}
+h2 {
+  font-size: 22px;
+  line-height: 1.25;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 25px;
+  line-height: 1.25;
+  font-weight: 400;
+}
+
+.main-col span {
+  display: inline-block;
+}
+
+.contact-details {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .contact-details {
+    width: 60%;
+  }
+}
+
+.download {
+  padding-top: 6px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .download {
+    width: 40%;
+  }
+}
+
+.resume .headerCol {
+  padding-top: 0.09rem;
+  padding-bottom: 2rem;
+}
+
+.resume .headerCol .sectionTitle {
+}
+
+.resume .header-col .main-col > div {
+  margin-bottom: 2rem;
+}
+
+.resume .header-col .main-col > div p {
+  @include line-height(2);
+}
+
+.resume .education,
+.resume .work {
+  margin-bottom: 48px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.resume .info {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  margin-bottom: 18px;
+  margin-top: 9px;
+}
+.resume .info span {
+  margin-right: 5px;
+  margin-left: 5px;
+  font-weight: 200;
+}
+
+.resume .info .date {
+  font-size: 15px;
+  line-height: 1.5;
+
+  margin-top: 6px;
+}
+
+/* Go To Top Button */
+#go-top {
+  left: 50%;
+  margin-left: -35px;
+  position: absolute;
+  top: -10px;
+}
+
+#go-top .fa-circle path {
+  stroke: #a9cc17;
+  stroke-width: 5px;
+}
