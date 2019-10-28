@@ -1,33 +1,17 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 
-const CopyrightBlock = styled.ul`
+const CopyrightBlock = styled.div`
   margin: 0;
   padding: 0;
 
-  li {
-    color: #fff;
+  span,
+  a {
     display: inline-block;
-    line-height: 24px;
-    margin: 0;
-    padding: 0;
+  }
 
-    &::before {
-      color: #a9cc17;
-      content: "∙";
-      font-size: 30px;
-      line-height: 1;
-      padding-left: 10px;
-      padding-right: 10px;
-    }
-
-    &:first-child:before {
-      display: none;
-    }
-
-    & a {
-      display: inline-block;
-    }
+  span {
+    margin: 0 5px;
   }
 `;
 
@@ -39,8 +23,9 @@ class Copyright extends Component {
   render() {
     return (
       <CopyrightBlock>
-        <li>&copy; Copyright {this.getYear()} Nick Meincken</li>
-        <li>
+        <small>
+          &copy; Copyright {this.getYear()} Nick Meincken
+          <span>&bull;</span>
           Design by{" "}
           <a
             title="Built By Moustache"
@@ -48,7 +33,7 @@ class Copyright extends Component {
           >
             Built By Moustache
           </a>
-        </li>
+        </small>
       </CopyrightBlock>
     );
   }

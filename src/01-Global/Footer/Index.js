@@ -4,6 +4,7 @@ import { faAngleUp, faCircle } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-scroll";
 import Copyright from "./../Copyright/Index";
 import Social from "./../Social/Index";
+import AboutSite from "./../AboutSite/Index";
 import styled from "styled-components";
 
 const FooterBlock = styled.footer`
@@ -71,6 +72,7 @@ class Footer extends Component {
               />
             </Link>
           </GoTo>
+          <AboutSite />
         </div>
       </FooterBlock>
     );

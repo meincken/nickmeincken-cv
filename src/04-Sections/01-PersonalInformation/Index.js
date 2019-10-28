@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 const Title = ({ title }) => (
-  <header className="section-title">
+  <header className="sectionTitle">
     <h2>{title}</h2>
   </header>
 );

@@ -8,6 +8,7 @@ import "./portfolio.css";
 const PortfolioBlock = styled.section`
   background: #e1e1e1;
   padding: 50px 0;
+  height: 100vh;
 
   @media (min-width: 768px) {
     padding: 150px 0;
@@ -60,7 +61,7 @@ class Portfolio extends Component {
       <PortfolioBlock id="portfolio">
         <div className="row">
           <div className="twelve columns collapsed">
-            <SectionTitle>Check out some of my previous works.</SectionTitle>
+            <Heading title="Check out some of my previous works." />
             <div
               id="portfolio-wrapper"
               className="portfolio-wrapper bgrid-quarters s-bgrid-halves cf"
@@ -74,4 +75,5 @@ class Portfolio extends Component {
   }
 }
 
+const Heading = ({ title }) => <SectionTitle>{title}</SectionTitle>;
 export default Portfolio;

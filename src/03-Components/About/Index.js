@@ -12,6 +12,9 @@ const AboutContainer = styled.section`
   overflow: hidden;
   padding-bottom: 66px;
   padding-top: 96px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
 
   a {
     color: #fff;
@@ -36,6 +39,7 @@ const ProfileImg = styled.img`
 const Title = styled.h2`
   color: #fff;
   margin-bottom: 12px;
+  font-weight: 400;
 `;
 
 const ButtonStyle = styled.a`
@@ -53,34 +57,18 @@ const ButtonStyle = styled.a`
   }
 `;
 
-const Row = styled.div`
-  display: flex;
-  flex-flow: row wrap;
-  margin: 0 auto;
-  max-width: 1040px;
-  width: 90%;
+const LinkStyle = styled(Link)`
+  background: #a9cc17;
+  border-radius: 5px;
+  display: block;
+  margin-top: 6px;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.5s;
 
-  .three {
-    width: 24%;
-  }
-
-  .nine {
-    width: 74%;
-  }
-
-  .row {
-    display: flex;
-    flex-flow: row wrap;
-    margin: 0 auto;
-    width: 100%;
-  }
-
-  .contact-details {
-    width: 60%;
-  }
-
-  .download {
-    width: 40%;
+  svg {
+    margin-right: 10px;
   }
 `;
 
@@ -94,7 +82,7 @@ class About extends Component {
 
     return (
       <AboutContainer id="about">
-        <Row>
+        <div className="row">
           <div className="three columns">
             <ProfileImg src={profilePic} alt="Nick Meincken" />
           </div>
@@ -111,15 +99,12 @@ class About extends Component {
               <div className="download">
                 <p>
                   <Button href={resumeDownload} title="Download Resume" />
-                  <Link to="/resume">
-                    <FontAwesomeIcon icon={faDownload} />
-                    Online Resume
-                  </Link>
+                  <LinkTo title="Online Resume" to="/resume" />
                 </p>
               </div>
             </div>
           </div>
-        </Row>
+        </div>
       </AboutContainer>
     );
   }
@@ -128,10 +113,17 @@ class About extends Component {
 const Heading = ({ title }) => <Title>{title}</Title>;
 const Content = ({ content }) => <p>{content}</p>;
 const Button = ({ href, title }) => (
-  <ButtonStyle href={href}>
+  <ButtonStyle href={href} target="_blank">
     <FontAwesomeIcon icon={faDownload} />
     {title}
   </ButtonStyle>
+);
+
+const LinkTo = ({ to, title }) => (
+  <LinkStyle to={to}>
+    <FontAwesomeIcon icon={faDownload} />
+    {title}
+  </LinkStyle>
 );
 
 export default About;

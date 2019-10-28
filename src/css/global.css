@@ -1,9 +1,16 @@
+@import "normalize.css";
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
 body {
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 16px;
+  font-size: 1.8rem;
   font-weight: 300;
   color: #1e1e1e;
   background: #1e1e1e;
+  line-height: 1.5;
 }
 
 .row {
@@ -14,13 +21,27 @@ body {
   width: 90%;
 }
 
-.row .row {
+@media (min-width: 768px) {
+  .row {
+    width: 100%;
+  }
+}
+
+.row .row,
+.row .row .three,
+.row .row .six {
   width: 100%;
+}
+
+.row .row .twelve {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .row .three {
   width: 100%;
 }
+
 @media (min-width: 768px) {
   .row .three {
     width: 24%;
@@ -60,4 +81,19 @@ body {
 .headerCol {
   padding-top: 9px;
   padding-bottom: 20px;
+}
+
+.contact-details,
+.download {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .contact-details {
+    width: 60%;
+  }
+
+  .download {
+    width: 40%;
+  }
 }

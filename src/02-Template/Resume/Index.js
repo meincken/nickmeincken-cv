@@ -5,11 +5,58 @@ import PersonalInformation from "./../../04-Sections/01-PersonalInformation/Inde
 import ProfessionalSkills from "./../../04-Sections/02-ProfessionalSkills/Index";
 import ContractorHistory from "./../../04-Sections/03-ContactorHistory/Index";
 import Extras from "./../../04-Sections/04-Extras/Index";
+import styled from "styled-components";
 
-import "./../../css/resume.css";
+// import "./../../css/resume.css";
 
-const API = "./cvData.json";
+const API = "./resumeData.json";
 
+const Container = styled.div`
+  background-color: #1e1e1e;
+  color: #e1e1e1;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+  font-weight: 200;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 960px;
+
+  .section {
+    display: flex;
+    flex-wrap: row wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    box-sizing: content-box;
+  }
+
+  .twelve,
+  .six {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .twelve {
+    width: 100%;
+  }
+
+  .six {
+    max-width: 100%;
+
+    @media (min-width: 768px) {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
+
+  a {
+    color: #a9cc17;
+  }
+`;
 class Template extends Component {
   constructor(props) {
     super(props);
@@ -30,7 +77,7 @@ class Template extends Component {
 
   render() {
     return (
-      <div className="container">
+      <Container>
         <p className="hidden-print-block text-center">
           <button className="print" onClick={() => window.print()}>
             PRINT
@@ -39,9 +86,7 @@ class Template extends Component {
             Home
           </Link>
         </p>
-        <header>
-          <Title data={this.state.resumeData} />
-        </header>
+        <Title data={this.state.resumeData} />
         <main>
           <PersonalInformation
             data={this.state.resumeData.PersonalInformation}
@@ -54,7 +99,7 @@ class Template extends Component {
           <p>References available upon request</p>
           <p>©2012-2019 Nick Meincken</p>
         </footer>
-      </div>
+      </Container>
     );
   }
 }

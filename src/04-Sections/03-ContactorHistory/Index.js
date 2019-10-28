@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Hist from "./contractor-history";
 import HistCont from "./contractor-history-cont";
-const API = "./cvData.json";
+const API = "./resumeData.json";
 
 class ContractorHistory extends Component {
   constructor(props) {
