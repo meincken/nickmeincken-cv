@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import Title from "./../../04-Sections/00-Header/Index";
 import PersonalInformation from "./../../04-Sections/01-PersonalInformation/Index";
 import ProfessionalSkills from "./../../04-Sections/02-ProfessionalSkills/Index";
@@ -7,14 +8,11 @@ import ContractorHistory from "./../../04-Sections/03-ContactorHistory/Index";
 import Extras from "./../../04-Sections/04-Extras/Index";
 import styled from "styled-components";
 
-// import "./../../css/resume.css";
-
 const API = "./resumeData.json";
 
 const Container = styled.div`
   background-color: #1e1e1e;
   color: #e1e1e1;
-  font-family: "Source Sans Pro", sans-serif;
   font-size: 16px;
   font-weight: 200;
   width: 100%;
@@ -26,30 +24,61 @@ const Container = styled.div`
 
   .section {
     display: flex;
-    flex-wrap: row wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-    box-sizing: content-box;
+    flex-wrap: wrap;
+  }
+
+  strong {
+    font-weight: 400;
+  }
+
+  h2,
+  h3,
+  h4 {
+    font-weight: 200;
+  }
+  h2 {
+    font-size: 28px;
+    border-bottom: 1px solid #fff;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  h4 {
+    font-size: 20px;
   }
 
   .twelve,
   .six {
     position: relative;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+
+    li {
+      margin-left: 20px;
+
+      strong {
+        display: block;
+      }
+    }
+
+    p span {
+      display: block;
+    }
   }
 
   .twelve {
-    width: 100%;
+    flex: 0 0 100%;
+
+    ul {
+      column-count: 2;
+    }
   }
 
   .six {
-    max-width: 100%;
+    flex: 0 0 100%;
 
     @media (min-width: 768px) {
       flex: 0 0 50%;
-      max-width: 50%;
     }
   }
 
@@ -57,6 +86,11 @@ const Container = styled.div`
     color: #a9cc17;
   }
 `;
+
+const Footer = styled.footer`
+  text-align: center;
+`;
+
 class Template extends Component {
   constructor(props) {
     super(props);
@@ -78,6 +112,10 @@ class Template extends Component {
   render() {
     return (
       <Container>
+        <Helmet>
+          <title>Nick Meincken | Curriculum Vitae</title>
+          <meta name="description" content="Helmet application" />
+        </Helmet>
         <p className="hidden-print-block text-center">
           <button className="print" onClick={() => window.print()}>
             PRINT
@@ -95,10 +133,10 @@ class Template extends Component {
           <ContractorHistory />
           <Extras data={this.state.resumeData.softskills} />
         </main>
-        <footer className="text-center hidden-print-block">
+        <Footer className="hidden-print-block">
           <p>References available upon request</p>
           <p>©2012-2019 Nick Meincken</p>
-        </footer>
+        </Footer>
       </Container>
     );
   }

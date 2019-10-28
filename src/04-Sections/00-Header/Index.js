@@ -3,10 +3,10 @@ import styled from "styled-components";
 
 const HeaderStyle = styled.header`
   h1 {
-    font-size: 80px;
     color: #a9cc17;
-    font-family: "Source Sans Pro", sans-serif;
     font-weight: 200;
+    font-size: 80px;
+    line-height: 1.25;
     margin: 0;
 
     small {

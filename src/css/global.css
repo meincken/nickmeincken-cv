@@ -97,3 +97,35 @@ body {
     width: 40%;
   }
 }
+
+@media print {
+  body {
+    font-size: 13px;
+    color: #000;
+  }
+
+  .hidden-print-block {
+    display: none;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  .contractor-history {
+    page-break-after: always;
+  }
+
+  h1 {
+    line-height: 1;
+  }
+
+  .professional-skills .block,
+  .six {
+    width: 50%;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+}
