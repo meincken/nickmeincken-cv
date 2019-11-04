@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
-import profilePic from "./../../images/profilepic.jpg";
+import profilePic from "./../../Images/profilepic.jpg";
 
 import styled from "styled-components";
 

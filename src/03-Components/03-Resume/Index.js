@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import Skills from "./../Skills/Index";
-import Education from "./../Education/Index";
+import Education from "./../05-Education/Index";
+import Skills from "./../06-Skills/Index";
 import styled from "styled-components";
 
 const ResumeContainer = styled.section`

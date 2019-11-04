@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { GlobalStyle } from "../../../src/Shared/Global";
 
-import Title from "./../../03-Components/00-Header/Index";
-import PersonalInformation from "./../../03-Components/01-PersonalInformation/Index";
-import ProfessionalSkills from "./../../03-Components/02-ProfessionalSkills/Index";
-import ContractorHistory from "./../../03-Components/03-ContactorHistory/Index";
-import Extras from "./../../03-Components/04-Extras/Index";
+import Title from "./../../03-Components/10-Header/Index";
+import PersonalInformation from "./../../03-Components/11-PersonalInformation/Index";
+import ProfessionalSkills from "./../../03-Components/12-ProfessionalSkills/Index";
+import ContractorHistory from "./../../03-Components/13-ContactorHistory/Index";
+import Extras from "./../../03-Components/14-Extras/Index";
 
 import styled from "styled-components";
 

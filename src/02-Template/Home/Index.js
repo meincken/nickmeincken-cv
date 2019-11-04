@@ -7,10 +7,10 @@ import { fab } from "@fortawesome/free-brands-svg-icons";
 import { GlobalStyle } from "../../../src/Shared/Global";
 
 import Nav from "./../../01-Global/Header/Index";
-import Hero from "./../../03-Components/Hero/Index";
-import About from "./../../03-Components/About/Index";
-import Resume from "./../../03-Components/Resume/Index";
-import Portfolio from "./../../03-Components/Portfolio/Index";
+import Hero from "./../../03-Components/01-Hero/Index";
+import About from "./../../03-Components/02-About/Index";
+import Resume from "./../../03-Components/03-Resume/Index";
+import Portfolio from "./../../03-Components/04-Portfolio/Index";
 import Footer from "./../../01-Global/Footer/Index";
 
 library.add(fab);
@@ -64,8 +64,6 @@ class Template extends Component {
           <About data={this.state.resumeData.main} />
           <Resume data={this.state.resumeData.resume} />
           <Portfolio data={this.state.resumeData.portfolio} />
-
-          {/*<Contact data={this.state.resumeData.main}/>*/}
         </main>
         <Footer data={this.state.resumeData.main} />
       </>

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-scroll";
-import Img from "./../../images/header-background.jpg";
+import Img from "./../../Images/header-background.jpg";
 import Social from "./../../01-Global/Social/Index";
 import styled from "styled-components";
 
