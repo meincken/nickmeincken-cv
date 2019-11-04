@@ -4,13 +4,14 @@ import { Waypoint } from "react-waypoint";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 
+import { GlobalStyle } from "../../../src/Shared/Global";
+
 import Nav from "./../../01-Global/Header/Index";
 import Hero from "./../../03-Components/Hero/Index";
 import About from "./../../03-Components/About/Index";
 import Resume from "./../../03-Components/Resume/Index";
 import Portfolio from "./../../03-Components/Portfolio/Index";
 import Footer from "./../../01-Global/Footer/Index";
-// import "./../../css/index.css";
 
 library.add(fab);
 
@@ -49,6 +50,8 @@ class Template extends Component {
   render() {
     return (
       <>
+        <GlobalStyle />
+
         <Nav sticky={this.state.stickyNav} />
         <main>
           <Hero data={this.state.resumeData.main} />

@@ -8,7 +8,8 @@ import "./portfolio.css";
 const PortfolioBlock = styled.section`
   background: #e1e1e1;
   padding: 50px 0;
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
 
   @media (min-width: 768px) {
     padding: 150px 0;

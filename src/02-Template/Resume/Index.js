@@ -1,11 +1,14 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import Title from "./../../04-Sections/00-Header/Index";
-import PersonalInformation from "./../../04-Sections/01-PersonalInformation/Index";
-import ProfessionalSkills from "./../../04-Sections/02-ProfessionalSkills/Index";
-import ContractorHistory from "./../../04-Sections/03-ContactorHistory/Index";
-import Extras from "./../../04-Sections/04-Extras/Index";
+import { GlobalStyle } from "../../../src/Shared/Global";
+
+import Title from "./../../03-Components/00-Header/Index";
+import PersonalInformation from "./../../03-Components/01-PersonalInformation/Index";
+import ProfessionalSkills from "./../../03-Components/02-ProfessionalSkills/Index";
+import ContractorHistory from "./../../03-Components/03-ContactorHistory/Index";
+import Extras from "./../../03-Components/04-Extras/Index";
+
 import styled from "styled-components";
 
 const API = "./resumeData.json";
@@ -49,9 +52,18 @@ const Container = styled.div`
     font-size: 20px;
   }
 
+  p {
+    margin: 0 0 10px;
+  }
+
   .twelve,
   .six {
     position: relative;
+
+    ul {
+      margin: 0 0 10px 10px;
+      padding: 0;
+    }
 
     li {
       margin-left: 20px;
@@ -85,9 +97,17 @@ const Container = styled.div`
   a {
     color: #a9cc17;
   }
+
+  dd {
+    margin-left: 0;
+  }
 `;
 
 const Footer = styled.footer`
+  text-align: center;
+`;
+
+const Header = styled.p`
   text-align: center;
 `;
 
@@ -112,18 +132,20 @@ class Template extends Component {
   render() {
     return (
       <Container>
+        <GlobalStyle />
         <Helmet>
           <title>Nick Meincken | Curriculum Vitae</title>
           <meta name="description" content="Helmet application" />
+          <body className="CV" />
         </Helmet>
-        <p className="hidden-print-block text-center">
+        <Header className="hidden-print-block">
           <button className="print" onClick={() => window.print()}>
             PRINT
           </button>
           <Link className="btn" to="/">
             Home
           </Link>
-        </p>
+        </Header>
         <Title data={this.state.resumeData} />
         <main>
           <PersonalInformation

@@ -20,6 +20,7 @@ const HeaderStyle = styled.header`
     }
   }
 `;
+
 const Title = ({ title, subtitle }) => (
   <HeaderStyle>
     <h1>
