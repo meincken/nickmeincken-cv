@@ -1,10 +1,22 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
+import { color, typography } from "./styles";
+
 import styled from "styled-components";
 
+// Heading
+const Title = styled.h2`
+  color: ${color.lightest};
+  font-weight: ${typography.weight.bold};
+  margin-bottom: 12px;
+`;
+
+export const Heading = ({ title }) => <Title>{title}</Title>;
+
+// Button
 const ButtonStyle = styled.a`
-  background: #a9cc17;
+  background: ${color.primary};
   border-radius: 5px;
   display: block;
   margin-top: 6px;
@@ -24,5 +36,3 @@ export const Button = ({ href, title }) => (
     {title}
   </ButtonStyle>
 );
-
-export default Button;

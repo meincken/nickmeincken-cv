@@ -6,12 +6,13 @@ import Copyright from "./../Copyright/Index";
 import Social from "./../Social/Index";
 import AboutSite from "./../AboutSite/Index";
 import styled from "styled-components";
+import { color, typography } from "./../../Shared/styles";
 
 const FooterBlock = styled.footer`
-  background-color: #1e1e1e;
-  border-top: 1px solid #a9cc17;
-  color: #e1e1e1;
-  font-size: 14px;
+  background-color: ${color.darkest};
+  border-top: 1px solid ${color.primary};
+  color: ${color.lighter};
+  font-size: ${typography.size.s2};
   padding-bottom: 48px;
   padding-top: 48px;
   position: relative;
@@ -19,23 +20,25 @@ const FooterBlock = styled.footer`
 
   & a,
   a:visited {
-    color: #a9cc17;
+    color: ${color.primary};
+    text-decoration: none;
   }
 
   a:focus,
   a:hover {
-    color: #fff;
+    color: ${color.lightest};
   }
 `;
 
 const GoTo = styled.div`
+  cursor: pointer;
   left: 50%;
   margin-left: -35px;
   position: absolute;
   top: -10px;
 
   .fa-circle path {
-    stroke: #a9cc17;
+    stroke: ${color.primary};
     stroke-width: 5px;
   }
 `;
@@ -44,11 +47,9 @@ class Footer extends Component {
   render() {
     return (
       <FooterBlock>
-        <div className="row">
-          <div className="twelve columns">
-            <Social />
-            <Copyright />
-          </div>
+        <div className="twelve columns">
+          <Social />
+          <Copyright />
 
           <GoTo id="go-top">
             <Link

@@ -7,6 +7,7 @@ export const fontUrl =
 export const bodyStyles = css`
   font-family: ${typography.type.primary};
   font-size: ${typography.size.s3}px;
+  font-weight: ${typography.weight.regular};
   background: #1e1e1e;
   color: ${color.darkest};
 
@@ -92,9 +93,12 @@ export const bodyStyles = css`
     margin: 1rem 0;
   }
 
-  // Nick bodyStyles
   a {
-    color: #a9cc17;
+    color: ${color.primary};
+  }
+
+  p {
+    line-height: 1.5;
   }
 
   ul {
@@ -184,6 +188,10 @@ export const bodyStyles = css`
     .download {
       width: 40%;
     }
+  }
+
+  #root {
+    display: grid;
   }
 
   @media print {

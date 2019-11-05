@@ -2,14 +2,16 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
-import { Button } from "./../../Shared/Button";
+// import { Button } from "./../../Shared/Button";
+import { Button, Heading } from "./../../Shared/UI";
+import { color } from "./../../Shared/styles";
 import profilePic from "./../../Images/profilepic.jpg";
 
 import styled from "styled-components";
 
 const AboutContainer = styled.section`
-  background: #1e1e1e;
-  color: #e1e1e1;
+  background: ${color.darkest};
+  color: ${color.lighter};
   overflow: hidden;
   padding-bottom: 66px;
   padding-top: 96px;
@@ -18,11 +20,11 @@ const AboutContainer = styled.section`
   align-items: center;
 
   a {
-    color: #fff;
+    color: ${color.lightest};
   }
 
   p {
-    color: #e1e1e1;
+    color: ${color.lighter};
     line-height: 1.5;
     margin-bottom: 20px;
   }
@@ -37,14 +39,8 @@ const ProfileImg = styled.img`
   width: 120px;
 `;
 
-const Title = styled.h2`
-  color: #fff;
-  margin-bottom: 12px;
-  font-weight: 400;
-`;
-
 const LinkStyle = styled(Link)`
-  background: #a9cc17;
+  background: ${color.primary};
   border-radius: 5px;
   display: block;
   margin-top: 6px;
@@ -69,7 +65,7 @@ class About extends Component {
     return (
       <AboutContainer id="about">
         <div className="row">
-          <div className="three columns">
+          <div className="three">
             <ProfileImg src={profilePic} alt="Nick Meincken" />
           </div>
           <div className="nine">
@@ -96,7 +92,6 @@ class About extends Component {
   }
 }
 
-const Heading = ({ title }) => <Title>{title}</Title>;
 const Content = ({ content }) => <p>{content}</p>;
 
 const LinkTo = ({ to, title }) => (

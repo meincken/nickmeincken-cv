@@ -5,6 +5,7 @@ import { Link } from "react-scroll";
 import Img from "./../../Images/header-background.jpg";
 import Social from "./../../01-Global/Social/Index";
 import styled from "styled-components";
+import { color } from "./../../Shared/styles";
 
 const Hero = styled.header`
   align-items: center;
@@ -42,7 +43,7 @@ const BannerText = styled.div`
 `;
 
 const Title = styled.h1`
-  color: #a9cc17;
+  color: ${color.primary};
   font-size: 50px;
   font-weight: 200;
   letter-spacing: -2px;
@@ -51,11 +52,11 @@ const Title = styled.h1`
   text-transform: uppercase;
 
   span {
-    border-bottom: 1px solid #a9cc17;
+    border-bottom: 1px solid ${color.primary};
   }
 
   small {
-    color: #fff;
+    color: ${color.lightest};
     display: block;
     font-size: 46%;
     line-height: 1.1;
@@ -68,7 +69,7 @@ const Title = styled.h1`
 `;
 
 const SubTitle = styled.h3`
-  color: #fff;
+  color: ${color.lightest};
   font-size: 20px;
   line-height: 1.2;
   margin: 0 auto;
@@ -86,7 +87,7 @@ const ScrollDown = styled.p`
   a {
     border-radius: 100%;
     bottom: 30px;
-    color: #a9cc17;
+    color: ${color.primary};
     display: block;
     font-size: 42px;
     height: 42px;
@@ -98,7 +99,7 @@ const ScrollDown = styled.p`
     width: 42px;
 
     &:hover {
-      color: #fff;
+      color: ${color.lightest};
     }
   }
 `;

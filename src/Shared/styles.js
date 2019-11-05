@@ -11,27 +11,12 @@ export const background = {
 
 export const color = {
   // Palette
-  primary: "#FF4785", // coral
-  secondary: "#1EA7FD", // ocean
-  tertiary: "#DDDDDD",
-
-  orange: "#FC521F",
-  gold: "#FFAE00",
-  green: "#66BF3C",
-  seafoam: "#37D5D3",
-  purple: "#6F2CAC",
-  ultraviolet: "#2A0481",
+  primary: "#a9cc17", // acidgreem
 
   // Monochrome
-  lightest: "#FFFFFF",
-  lighter: "#F8F8F8",
-  light: "#F3F3F3",
-  mediumlight: "#EEEEEE",
-  medium: "#DDDDDD",
-  mediumdark: "#999999",
-  dark: "#666666",
-  darker: "#444444",
-  darkest: "#333333",
+  lightest: "#FFF",
+  lighter: "#e1e1e1",
+  darkest: "#1e1e1e",
 
   border: "rgba(0,0,0,.1)",
 
@@ -60,9 +45,8 @@ export const typography = {
       '"SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace'
   },
   weight: {
-    regular: "400",
-    bold: "700",
-    extrabold: "800",
+    regular: "200",
+    bold: "400",
     black: "900"
   },
   size: {

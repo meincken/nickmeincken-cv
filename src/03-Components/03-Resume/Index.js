@@ -51,7 +51,7 @@ class Resume extends Component {
       var skillmessage = this.props.data.skillmessage;
       var work = this.props.data.work.map(function(work) {
         return (
-          <div key={work.company}>
+          <div key={work.company} className="twelve">
             <SegmentTitle>{work.company}</SegmentTitle>
             <SectionInfo>
               {work.title}
@@ -66,31 +66,29 @@ class Resume extends Component {
     return (
       <ResumeContainer id="resume">
         <div className="row education">
-          <div className="three columns headerCol">
+          <div className="three headerCol">
             <Heading title="Education" />
           </div>
 
-          <div className="nine columns main-col">
+          <div className="nine">
             <div className="row item">
-              <div className="twelve columns">
-                <Education />
-              </div>
+              <Education />
             </div>
           </div>
         </div>
 
         <div className="row work">
-          <div className="three columns headerCol">
+          <div className="three headerCol">
             <Heading title="Contractor History" />
           </div>
-          <div className="nine columns main-col">{work}</div>
+          <div className="nine">{work}</div>
         </div>
 
         <div className="row skill">
-          <div className="three columns headerCol">
+          <div className="three headerCol">
             <Heading title="Skills" />
           </div>
-          <div className="nine columns main-col">
+          <div className="nine main-col">
             <p>{skillmessage}</p>
             <Skills />
           </div>
