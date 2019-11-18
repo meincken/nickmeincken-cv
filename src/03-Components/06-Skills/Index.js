@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import styled from "styled-components";
 var skills = [
   {
@@ -34,17 +34,6 @@ var skills = [
     level: "70%"
   }
 ];
-
-const SkillsBlock = ({ skills }) => (
-  <>
-    {skills.map(skills => (
-      <li key={skills.name}>
-        <span style={{ width: skills.level }} className="bar-expand"></span>
-        <em>{skills.name}</em>
-      </li>
-    ))}
-  </>
-);
 
 const Bars = styled.div`
   float: left;
@@ -92,17 +81,17 @@ const SkillsList = styled.ul`
   }
 `;
 
-class Skills extends Component {
-  render() {
-    return (
-      <>
-        <Bars>
-          <SkillsList>
-            <SkillsBlock skills={skills} />
-          </SkillsList>
-        </Bars>
-      </>
-    );
-  }
-}
-export default Skills;
+export const SkillsBlock = () => (
+  <>
+    <Bars>
+      <SkillsList>
+        {skills.map(skills => (
+          <li key={skills.name}>
+            <span style={{ width: skills.level }} className="bar-expand"></span>
+            <em>{skills.name}</em>
+          </li>
+        ))}
+      </SkillsList>
+    </Bars>
+  </>
+);

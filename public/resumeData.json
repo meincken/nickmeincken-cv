@@ -19,6 +19,12 @@
     "skillmessage": "I am a competent Front End Developer with good skills with many frameworks and content management systems. Below is my level of competency with various technologies.",
     "work": [
       {
+        "company": "Texture London",
+        "title": "Front End Developer",
+        "years": "November 2019 - ",
+        "description": "Building components and pages for Shopify Plus."
+      },
+      {
         "company": "Signal Noise",
         "title": "Front End Developer",
         "years": "August 2019 - October 2019",
@@ -175,10 +181,18 @@
     "sectiontitle": "Contractor History",
     "experience": [
       {
+        "class": "twelve",
+        "company": "Texture London",
+        "role": "Front End Developer",
+        "date": "November 2019 - ",
+        "description": "Front end developer role with minimal back end skills for Shopify. Building online shopping portal for a luxury brand.",
+        "list": [{ "item": "Shopify, Liquid" }]
+      },
+      {
         "class": "six",
         "company": "Signal Noise",
         "role": "Front End Developer",
-        "date": "August 2019 - September 2019",
+        "date": "August 2019 - October 2019",
         "description": "Building AEM components for Siemens using postcss and PatternLab. This project contained the use of Stylelint, PostCSS and BEM within Gulp. It drew in a lot of style rules from other projects created by Signal Noise for Siemens.",
         "list": [
           { "item": "PostCSS, Stylelint, BEM" },

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import styled from "styled-components";
 var education = [
   {
@@ -45,10 +45,10 @@ const Content = styled.p`
   }
 `;
 
-const EducationBlock = ({ skills }) => (
+export const EducationBlock = () => (
   <>
     {education.map(education => (
-      <div key={education.school}>
+      <div key={education.school} className="twelve">
         <Heading>{education.school}</Heading>
         <Content>
           {education.degree} <span>&bull;</span>
@@ -58,14 +58,3 @@ const EducationBlock = ({ skills }) => (
     ))}
   </>
 );
-
-class Education extends Component {
-  render() {
-    return (
-      <>
-        <EducationBlock education={education} />
-      </>
-    );
-  }
-}
-export default Education;

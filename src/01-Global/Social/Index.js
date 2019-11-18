@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
+import { color } from "./../../Shared/styles";
+
 var social = [
   {
     name: "twitter",
@@ -32,27 +34,23 @@ var social = [
 const SocialBlock = ({ social }) => (
   <>
     {social.map(network => (
-      <li key={network.name}>
-        <a href={network.url}>
-          <FontAwesomeIcon icon={["fab", network.className]} size="2x" />
-        </a>
-      </li>
+      <a key={network.name} href={network.url}>
+        <FontAwesomeIcon icon={["fab", network.className]} size="2x" />
+      </a>
     ))}
   </>
 );
 
-const SocialLinks = styled.ul`
+const SocialLinks = styled.div`
   margin: 18px 0 30px;
   padding: 0;
 
-  & li {
-    color: #a9cc17;
-    display: inline-block;
+  & a {
+    color: ${color.primary};
     margin: 0 0 0 42px;
-    padding: 0;
   }
 
-  & li:first-child {
+  & a:first-child {
     margin-left: 0;
   }
 `;

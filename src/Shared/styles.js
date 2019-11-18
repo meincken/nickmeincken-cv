@@ -59,6 +59,7 @@ export const typography = {
     l1: "32",
     l2: "40",
     l3: "48",
+    l4: "50",
     code: "90"
   }
 };

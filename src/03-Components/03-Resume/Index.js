@@ -1,6 +1,8 @@
 import React, { Component } from "react";
-import Education from "./../05-Education/Index";
-import Skills from "./../06-Skills/Index";
+import { EducationBlock } from "./../05-Education/Index";
+import { SkillsBlock } from "./../06-Skills/Index";
+import { SectionHeading } from "./../../Shared/UI";
+
 import styled from "styled-components";
 
 const ResumeContainer = styled.section`
@@ -8,20 +10,6 @@ const ResumeContainer = styled.section`
   padding-top: 90px;
   padding-bottom: 72px;
   overflow: hidden;
-`;
-
-const SectionTitle = styled.h1`
-  float: left;
-  font-size: 16px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin: 0;
-
-  span {
-    border-bottom: 3px solid #a9cc17;
-    padding-bottom: 6px;
-  }
 `;
 
 const SegmentTitle = styled.h3`
@@ -66,42 +54,29 @@ class Resume extends Component {
     return (
       <ResumeContainer id="resume">
         <div className="row education">
-          <div className="three headerCol">
-            <Heading title="Education" />
-          </div>
-
+          <SectionHeading title="Education" />
           <div className="nine">
             <div className="row item">
-              <Education />
+              <EducationBlock />
             </div>
           </div>
         </div>
 
         <div className="row work">
-          <div className="three headerCol">
-            <Heading title="Contractor History" />
-          </div>
+          <SectionHeading title="Contractor History" />
           <div className="nine">{work}</div>
         </div>
 
         <div className="row skill">
-          <div className="three headerCol">
-            <Heading title="Skills" />
-          </div>
+          <SectionHeading title="Skills" />
           <div className="nine main-col">
             <p>{skillmessage}</p>
-            <Skills />
+            <SkillsBlock />
           </div>
         </div>
       </ResumeContainer>
     );
   }
 }
-
-const Heading = ({ title }) => (
-  <SectionTitle>
-    <span>{title}</span>
-  </SectionTitle>
-);
 
 export default Resume;
