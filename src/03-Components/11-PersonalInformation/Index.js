@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Section, ArticleTwelve } from "./../../Shared/UI";
 
 const Title = ({ title }) => (
   <header className="sectionTitle">
@@ -21,13 +22,13 @@ class PersonalInformation extends Component {
     }
 
     return (
-      <section className="section personal-information">
+      <Section sectionTitle="personal-information">
         <article className="twelve">
           <Title title={sectiontitle} />
           <ArticleTitle title={articletitle} />
           <ArticleContent content={articlecontent} />
         </article>
-      </section>
+      </Section>
     );
   }
 }

@@ -17,7 +17,7 @@ const Container = styled.div`
   background-color: #1e1e1e;
   color: #e1e1e1;
   font-size: 16px;
-  font-weight: 200;
+  font-weight: 400;
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -25,9 +25,17 @@ const Container = styled.div`
   margin-left: auto;
   max-width: 960px;
 
+  @media print {
+    font-weight: 200;
+  }
+
   .section {
     display: flex;
     flex-wrap: wrap;
+
+    @media print {
+      display: block;
+    }
   }
 
   strong {
@@ -37,19 +45,34 @@ const Container = styled.div`
   h2,
   h3,
   h4 {
-    font-weight: 200;
+    font-weight: 400;
+
+    @media print {
+      font-weight: 200;
+    }
   }
   h2 {
     font-size: 28px;
     border-bottom: 1px solid #fff;
+
+    @media print {
+      font-size: 16px;
+    }
   }
 
   h3 {
     font-size: 24px;
+    @media print {
+      font-size: 14px;
+    }
   }
 
   h4 {
     font-size: 20px;
+
+    @media print {
+      font-size: 10px;
+    }
   }
 
   p {
@@ -91,6 +114,10 @@ const Container = styled.div`
 
     @media (min-width: 768px) {
       flex: 0 0 50%;
+    }
+
+    @media print {
+      display: inline-block;
     }
   }
 

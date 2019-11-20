@@ -9,6 +9,10 @@ const HeaderStyle = styled.header`
     line-height: 1.25;
     margin: 0;
 
+    @media print {
+      font-size: 50px;
+    }
+
     small {
       color: #e1e1e1;
       font-size: 65%;

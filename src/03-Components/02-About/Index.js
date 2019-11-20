@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
-// import { Button } from "./../../Shared/Button";
 import { Button, Heading } from "./../../Shared/UI";
 import { color } from "./../../Shared/styles";
 import profilePic from "./../../Images/profilepic.jpg";
