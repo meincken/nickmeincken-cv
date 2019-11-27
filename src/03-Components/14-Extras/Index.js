@@ -26,7 +26,7 @@ class Extra extends Component {
 
   render() {
     return (
-      <section className="section misc">
+      <section className="misc">
         <div className="six">
           <SoftSkills data={this.state.resumeData.softskills} />
           <Personal data={this.state.resumeData.personal} />

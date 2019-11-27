@@ -58,19 +58,3 @@ export const SectionHeading = ({ title }) => (
     </SectionTitle>
   </div>
 );
-
-const SectionBlock = styled.section`
-  display: flex;
-  flex-flow: wrap;
-`;
-
-export const Section = ({ sectionTitle }) => (
-  <SectionBlock className={sectionTitle}></SectionBlock>
-);
-
-const ArticleTwelveBlock = styled.article`
-  flex: 0 0 100%;
-  max-width: 100%;
-`;
-
-export const ArticleTwelve = () => <ArticleTwelveBlock></ArticleTwelveBlock>;

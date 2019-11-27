@@ -45,8 +45,8 @@ export const typography = {
       '"SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace'
   },
   weight: {
-    regular: "200",
-    bold: "400",
+    light: "200",
+    regular: "400",
     black: "900"
   },
   size: {

@@ -103,6 +103,7 @@ export const bodyStyles = css`
 
   ul {
     padding-left: 0;
+    margin: 0 0 10px;
   }
 
   .row {
@@ -190,10 +191,6 @@ export const bodyStyles = css`
     }
   }
 
-  #root {
-    display: grid;
-  }
-
   @media print {
     body {
       font-size: 13px;
@@ -205,7 +202,7 @@ export const bodyStyles = css`
     }
 
     p {
-      font-size: 12px;
+      font-size: 12px !important;
     }
 
     .contractor-history {
@@ -220,10 +217,6 @@ export const bodyStyles = css`
     .six {
       width: 50%;
     }
-
-    a[href]:after {
-      content: " (" attr(href) ")";
-    }
   }
 `;
 
@@ -234,5 +227,9 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     overflow-y: auto;
     overflow-x: hidden;
+
+    @media print {
+      font-size: 13px;
+    }
   }
 `;

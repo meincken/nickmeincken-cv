@@ -1,4 +1,12 @@
 import React, { Component } from "react";
+import styled from "styled-components";
+
+const DL = styled.dl`
+  dd {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+`;
 
 class Additional extends Component {
   render() {
@@ -7,10 +15,10 @@ class Additional extends Component {
       var content = this.props.data.content;
       var additional = this.props.data.list.map(function(item) {
         return (
-          <dl key={item.title}>
+          <DL key={item.title}>
             <dt>{item.title}</dt>
             <dd>{item.description}</dd>
-          </dl>
+          </DL>
         );
       });
     }
