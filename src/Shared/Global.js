@@ -106,6 +106,14 @@ export const bodyStyles = css`
     margin: 0 0 10px;
   }
 
+  .show-print {
+    display: none;
+
+    @media print {
+      display: block;
+    }
+  }
+
   .row {
     display: flex;
     flex-flow: row wrap;

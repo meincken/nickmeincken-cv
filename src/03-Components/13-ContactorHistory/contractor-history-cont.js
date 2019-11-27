@@ -1,8 +1,15 @@
 import React, { Component } from "react";
 
+const Title = ({ title }) => (
+  <header className="twelve section-title show-print">
+    <h2>{title}</h2>
+  </header>
+);
+
 class ContractorHistory extends Component {
   render() {
     if (this.props.data) {
+      var sectiontitle = this.props.data.sectiontitle;
       var company = this.props.data.experience.map(function(content) {
         return (
           <div key={content.company} className={content.class}>
@@ -22,7 +29,12 @@ class ContractorHistory extends Component {
       });
     }
 
-    return <>{company}</>;
+    return (
+      <>
+        <Title title={sectiontitle} />
+        {company}
+      </>
+    );
   }
 }
 

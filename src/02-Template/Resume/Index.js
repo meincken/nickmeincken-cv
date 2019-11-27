@@ -21,7 +21,7 @@ const Container = styled.div`
     [container-start] minmax(0, 960px) [container-end]
     minmax(1em, 1fr) [viewport-end];
 
-  .item--contained {
+  .container {
     grid-column: container;
   }
 
@@ -68,15 +68,35 @@ const Container = styled.div`
         justify-content: space-between;
 
         li {
-          flex: 0 0 47%;
-          max-width: 47%;
+          flex: 0 0 100%;
+          max-width: 100%;
+
+          @media (min-width: 768px) {
+            flex: 0 0 47%;
+            max-width: 47%;
+          }
+
+          @media print {
+            flex: 0 0 47%;
+            max-width: 47%;
+          }
         }
       }
     }
 
     .six {
-      flex: 0 0 48%;
-      max-width: 48%;
+      flex: 0 0 100%;
+      max-width: 100%;
+
+      @media (min-width: 768px) {
+        flex: 0 0 48%;
+        max-width: 48%;
+      }
+
+      @media print {
+        flex: 0 0 48%;
+        max-width: 48%;
+      }
     }
   }
 `;
@@ -116,7 +136,7 @@ class Template extends Component {
           <meta name="description" content="Helmet application" />
           <body className="CV" />
         </Helmet>
-        <Header className="item--contained hidden-print-block">
+        <Header className="container hidden-print-block">
           <button className="print" onClick={() => window.print()}>
             PRINT
           </button>
@@ -126,15 +146,15 @@ class Template extends Component {
           </Link>
         </Header>
         <Title data={this.state.resumeData} />
-        <div className="item--contained">
+        <main className="container">
           <PersonalInformation
             data={this.state.resumeData.PersonalInformation}
           />
           <ProfessionalSkills data={this.state.resumeData.professionalSkills} />
           <ContractorHistory />
           <Extras data={this.state.resumeData.softskills} />
-        </div>
-        <Footer className="item--contained hidden-print-block">
+        </main>
+        <Footer className="container hidden-print-block">
           <p>References available upon request</p>
           <p>©2012-2019 Nick Meincken</p>
         </Footer>

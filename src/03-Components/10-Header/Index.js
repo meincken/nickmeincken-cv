@@ -26,7 +26,7 @@ const HeaderStyle = styled.header`
 `;
 
 const Title = ({ title, subtitle }) => (
-  <HeaderStyle className="item--contained">
+  <HeaderStyle className="container">
     <h1>
       {title} <small>{subtitle}</small>
     </h1>

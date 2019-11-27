@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 const Title = ({ title }) => (
-  <header className="section-title">
+  <header className="twelve section-title">
     <h2>{title}</h2>
   </header>
 );
@@ -31,9 +31,7 @@ class ContractorHistory extends Component {
 
     return (
       <>
-        <article className="twelve">
-          <Title title={sectiontitle} />
-        </article>
+        <Title title={sectiontitle} />
         {company}
       </>
     );
