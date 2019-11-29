@@ -3,6 +3,11 @@
 ## Contents
 
 - [Professional Skills](#professional-skills)
+- [Technical Skills](#technical-skills)
+- [Contractor History](#contractor-history)
+- [Soft Skills](#soft-skills)
+- [Examples of my work](#examples-of-my-work)
+- [Additional Information](#additional-information)
 
 ## Personal information
 
