@@ -47,8 +47,6 @@ Front end developer role with minimal back end skills for Shopify. Building onli
 
 ## &nbsp;
 
----
-
 ### Signal Noise
 
 **Front End Developer** August 2018 - October 2019
