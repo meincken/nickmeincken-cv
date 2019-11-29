@@ -8,15 +8,38 @@ import profilePic from "./../../Images/profilepic.jpg";
 
 import styled from "styled-components";
 
-const AboutContainer = styled.section`
+const Container = styled.section`
+  align-content: center;
   background: ${color.darkest};
   color: ${color.lighter};
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 10px;
+  justify-content: center;
+  max-width: 1040px;
+  margin: 0 auto;
   overflow: hidden;
-  padding-bottom: 66px;
-  padding-top: 96px;
-  height: 100vh;
-  display: flex;
-  align-items: center;
+  padding: 40px 20px;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .box:nth-of-type(1) {
+    grid-column: span 3;
+  }
+
+  .box:nth-of-type(2) {
+    grid-column: span 9;
+  }
+
+  .contact-details {
+    grid-column: span 6;
+  }
+
+  .download {
+    grid-column: span 6;
+  }
 
   a {
     color: ${color.lightest};
@@ -62,31 +85,29 @@ class About extends Component {
     }
 
     return (
-      <AboutContainer id="about">
-        <div className="row">
-          <div className="three">
-            <ProfileImg src={profilePic} alt="Nick Meincken" />
-          </div>
-          <div className="nine">
-            <Heading title="About Me" />
-            <Content content={bio} />
-            <div className="row">
-              <div className="contact-details">
-                <Heading title="Contact" />
-                <p className="address">
-                  <span>{email}</span>
-                </p>
-              </div>
-              <div className="download">
-                <p>
-                  <Button href={resumeDownload} title="Download Resume" />
-                  <LinkTo title="Online Resume" to="/resume" />
-                </p>
-              </div>
-            </div>
-          </div>
+      <Container id="about">
+        <div className="box">
+          <ProfileImg src={profilePic} alt="Nick Meincken" />
         </div>
-      </AboutContainer>
+        <div className="box">
+          <Heading title="About Me" />
+          <Content content={bio} />
+          <Container>
+            <div className="contact-details">
+              <Heading title="Contact" />
+              <p className="address">
+                <span>{email}</span>
+              </p>
+            </div>
+            <div className="download">
+              <p>
+                <Button href={resumeDownload} title="Download Resume" />
+                <LinkTo title="Online Resume" to="/resume" />
+              </p>
+            </div>
+          </Container>
+        </div>
+      </Container>
     );
   }
 }

@@ -37,24 +37,27 @@ export const Button = ({ href, title }) => (
   </ButtonStyle>
 );
 
-const SectionTitle = styled.h1`
-  float: left;
-  font-size: ${typography.size.s3}px;
-  font-weight: ${typography.weight.black};
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin: 0;
+const SectionTitle = styled.header`
+  grid-column: span 3;
+  h2 {
+    float: left;
+    font-size: ${typography.size.s3}px;
+    font-weight: ${typography.weight.black};
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0;
 
-  span {
-    border-bottom: 3px solid #a9cc17;
-    padding-bottom: 6px;
+    span {
+      border-bottom: 3px solid #a9cc17;
+      padding-bottom: 6px;
+    }
   }
 `;
 
 export const SectionHeading = ({ title }) => (
-  <div className="three headerCol">
-    <SectionTitle>
+  <SectionTitle>
+    <h2>
       <span>{title}</span>
-    </SectionTitle>
-  </div>
+    </h2>
+  </SectionTitle>
 );

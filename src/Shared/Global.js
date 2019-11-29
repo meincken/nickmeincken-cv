@@ -97,8 +97,20 @@ export const bodyStyles = css`
     color: ${color.primary};
   }
 
+  h1 {
+    @media print {
+      line-height: 1;
+    }
+  }
+
   p {
+    font-size: 16px;
     line-height: 1.5;
+    margin-top: 0;
+
+    @media print {
+      font-size: 12px !important;
+    }
   }
 
   ul {
@@ -114,89 +126,9 @@ export const bodyStyles = css`
     }
   }
 
-  .row {
-    display: flex;
-    flex-flow: row wrap;
-    margin: 0 auto;
-    max-width: 1040px;
-    width: 90%;
-  }
-
-  @media (min-width: 768px) {
-    .row {
-      width: 100%;
-    }
-  }
-
-  .row .row,
-  .row .row .three,
-  .row .row .six {
-    width: 100%;
-  }
-
-  .row .row .twelve {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .row .three {
-    width: 100%;
-  }
-
-  @media (min-width: 768px) {
-    .row .three {
-      width: 24%;
-    }
-  }
-
-  .row .six {
-    width: 100%;
-  }
-
-  @media (min-width: 768px) {
-    .row .six {
-      width: 49%;
-    }
-  }
-
-  .row .nine {
-    width: 100%;
-  }
-  @media (min-width: 768px) {
-    .row .nine {
-      width: 74%;
-    }
-  }
-
-  .row .twelve {
-    width: 100%;
-  }
-
-  .education,
-  .work {
-    border-bottom: 1px solid #e1e1e1;
-    margin-bottom: 48px;
-    padding-bottom: 24px;
-  }
-
-  .headerCol {
-    padding-top: 9px;
-    padding-bottom: 20px;
-  }
-
-  .contact-details,
-  .download {
-    width: 100%;
-  }
-
-  @media (min-width: 768px) {
-    .contact-details {
-      width: 60%;
-    }
-
-    .download {
-      width: 40%;
-    }
+  #root {
+    display: grid;
+    overflow: hidden;
   }
 
   @media print {
@@ -205,25 +137,8 @@ export const bodyStyles = css`
       color: #000;
     }
 
-    .hidden-print-block {
-      display: none;
-    }
-
-    p {
-      font-size: 12px !important;
-    }
-
     .contractor-history {
       page-break-after: always;
-    }
-
-    h1 {
-      line-height: 1;
-    }
-
-    .professional-skills .block,
-    .six {
-      width: 50%;
     }
   }
 `;

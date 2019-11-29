@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import styled from "styled-components";
+import { color } from "./../../Shared/styles";
 
 const SiteData = styled.div`
-  color: white;
+  color: ${color.lighter};
   margin: 0;
   padding: 0;
   width: 100%;
@@ -29,7 +30,7 @@ const ModalMain = styled.section`
   position: fixed;
   background: #fff;
   color: #000;
-  max-width: 500px;
+  max-width: 800px;
   padding: 20px;
   height: auto;
   top: 50%;
@@ -44,7 +45,13 @@ const Modal = ({ handleClose, show, children }) => {
     <ModalWrap className={showHideClassName}>
       <ModalMain>
         <h3>About this site</h3>
-        <p>This site is built on React and uses styled-components</p>
+        <p>
+          This site is built on React and uses styled-components and CSS Grid
+        </p>
+        <p>
+          This site is constantly evolving and a practice ground for honing my
+          skills.
+        </p>
         <button onClick={handleClose}>Close</button>
       </ModalMain>
     </ModalWrap>

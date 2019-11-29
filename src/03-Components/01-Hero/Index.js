@@ -7,7 +7,7 @@ import Social from "./../../01-Global/Social/Index";
 import styled from "styled-components";
 import { color } from "./../../Shared/styles";
 
-const Hero = styled.header`
+const Hero = styled.section`
   align-items: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(${Img});
@@ -114,36 +114,34 @@ class Header extends Component {
     }
 
     return (
-      <div id="home" className="hero">
-        <Hero>
-          <Banner>
-            <BannerText>
-              <Title>
-                <span>{name}</span>
-                <small>{occupation}</small>
-              </Title>
-              <SubTitle>
-                I'm a {city} based <span>{occupation}</span>. {description}
-              </SubTitle>
-              <HR />
-              <Social />
-            </BannerText>
-          </Banner>
+      <Hero id="home" className="hero">
+        <Banner>
+          <BannerText>
+            <Title>
+              <span>{name}</span>
+              <small>{occupation}</small>
+            </Title>
+            <SubTitle>
+              I'm a {city} based <span>{occupation}</span>. {description}
+            </SubTitle>
+            <HR />
+            <Social />
+          </BannerText>
+        </Banner>
 
-          <ScrollDown>
-            <Link
-              activeClass="current"
-              to="about"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={900}
-            >
-              <FontAwesomeIcon icon={faAngleDown} size="lg" />
-            </Link>
-          </ScrollDown>
-        </Hero>
-      </div>
+        <ScrollDown>
+          <Link
+            activeClass="current"
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={900}
+          >
+            <FontAwesomeIcon icon={faAngleDown} size="lg" />
+          </Link>
+        </ScrollDown>
+      </Hero>
     );
   }
 }

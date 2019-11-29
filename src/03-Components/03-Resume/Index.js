@@ -2,14 +2,37 @@ import React, { Component } from "react";
 import { EducationBlock } from "./../05-Education/Index";
 import { SkillsBlock } from "./../06-Skills/Index";
 import { SectionHeading } from "./../../Shared/UI";
+import { color } from "./../../Shared/styles";
 
 import styled from "styled-components";
 
-const ResumeContainer = styled.section`
-  background: #fff;
-  padding-top: 90px;
-  padding-bottom: 72px;
-  overflow: hidden;
+const Container = styled.section`
+  background: ${color.lightest};
+  color: ${color.darkest};
+`;
+
+const ContainerBlock = styled.article`
+  align-content: center;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 10px;
+  justify-content: center;
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  border-bottom: 1px solid ${color.lighter};
+
+  &:last-child {
+    border-bottom: 0;
+  }
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  section {
+    grid-column: span 9;
+  }
 `;
 
 const SegmentTitle = styled.h3`
@@ -39,42 +62,40 @@ class Resume extends Component {
       var skillmessage = this.props.data.skillmessage;
       var work = this.props.data.work.map(function(work) {
         return (
-          <div key={work.company} className="twelve">
+          <article key={work.company}>
             <SegmentTitle>{work.company}</SegmentTitle>
             <SectionInfo>
               {work.title}
               <span>&bull;</span> <span className="date">{work.years}</span>
             </SectionInfo>
             <p>{work.description}</p>
-          </div>
+          </article>
         );
       });
     }
 
     return (
-      <ResumeContainer id="resume">
-        <div className="row education">
+      <Container id="resume">
+        <ContainerBlock>
           <SectionHeading title="Education" />
-          <div className="nine">
-            <div className="row item">
-              <EducationBlock />
-            </div>
-          </div>
-        </div>
+          <section>
+            <EducationBlock />
+          </section>
+        </ContainerBlock>
 
-        <div className="row work">
+        <ContainerBlock>
           <SectionHeading title="Contractor History" />
-          <div className="nine">{work}</div>
-        </div>
+          <section>{work}</section>
+        </ContainerBlock>
 
-        <div className="row skill">
+        <ContainerBlock className="skill">
           <SectionHeading title="Skills" />
-          <div className="nine main-col">
+          <section>
             <p>{skillmessage}</p>
             <SkillsBlock />
-          </div>
-        </div>
-      </ResumeContainer>
+          </section>
+        </ContainerBlock>
+      </Container>
     );
   }
 }

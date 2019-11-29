@@ -18,10 +18,15 @@ const FooterBlock = styled.footer`
   position: relative;
   text-align: center;
 
+  .twelve {
+    max-width: 960px;
+  }
+
   & a,
   a:visited {
     color: ${color.primary};
     text-decoration: none;
+    transition: all 1s;
   }
 
   a:focus,
@@ -47,34 +52,32 @@ class Footer extends Component {
   render() {
     return (
       <FooterBlock>
-        <div className="twelve columns">
-          <Social />
-          <Copyright />
+        <Social />
+        <Copyright />
 
-          <GoTo id="go-top">
-            <Link
-              className="smoothscroll fa-layers fa-fw"
-              to="home"
-              smooth={true}
-              offset={0}
-              duration={900}
-            >
-              <FontAwesomeIcon
-                icon={faCircle}
-                color="#000"
-                size="4x"
-                fixedWidth
-              />
-              <FontAwesomeIcon
-                icon={faAngleUp}
-                color="#A9CC17"
-                size="4x"
-                fixedWidth
-              />
-            </Link>
-          </GoTo>
-          <AboutSite />
-        </div>
+        <GoTo id="go-top">
+          <Link
+            className="smoothscroll fa-layers fa-fw"
+            to="home"
+            smooth={true}
+            offset={0}
+            duration={900}
+          >
+            <FontAwesomeIcon
+              icon={faCircle}
+              color="#000"
+              size="4x"
+              fixedWidth
+            />
+            <FontAwesomeIcon
+              icon={faAngleUp}
+              color="#A9CC17"
+              size="4x"
+              fixedWidth
+            />
+          </Link>
+        </GoTo>
+        <AboutSite />
       </FooterBlock>
     );
   }
