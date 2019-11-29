@@ -1,6 +1,7 @@
 {
   "name": "nickmeincken-cv",
   "version": "0.1.0",
+  "homepage": "https://nick.meincken.com/",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.14",
