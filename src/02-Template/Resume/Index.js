@@ -21,8 +21,16 @@ const Container = styled.div`
     [container-start] minmax(0, 960px) [container-end]
     minmax(1em, 1fr) [viewport-end];
 
+  @media print {
+    display: block;
+  }
+
   .container {
     grid-column: container;
+
+    @media print {
+      display: block;
+    }
   }
 
   ul {

@@ -126,6 +126,12 @@ export const bodyStyles = css`
     }
   }
 
+  .hidden-print-block {
+    @media print {
+      display: none !important;
+    }
+  }
+
   #root {
     display: grid;
     overflow: hidden;
