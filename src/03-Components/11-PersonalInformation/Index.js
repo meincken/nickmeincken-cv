@@ -1,8 +1,7 @@
 import React, { Component } from "react";
-import { Section, ArticleTwelve } from "./../../Shared/UI";
 
 const Title = ({ title }) => (
-  <header className="sectionTitle">
+  <header className="twelve section-title">
     <h2>{title}</h2>
   </header>
 );
@@ -22,13 +21,11 @@ class PersonalInformation extends Component {
     }
 
     return (
-      <Section sectionTitle="personal-information">
-        <article className="twelve">
-          <Title title={sectiontitle} />
-          <ArticleTitle title={articletitle} />
-          <ArticleContent content={articlecontent} />
-        </article>
-      </Section>
+      <section className="personal-information">
+        <Title title={sectiontitle} />
+        <ArticleTitle title={articletitle} />
+        <ArticleContent content={articlecontent} />
+      </section>
     );
   }
 }

@@ -186,7 +186,10 @@
         "role": "Front End Developer",
         "date": "November 2019 - ",
         "description": "Front end developer role with minimal back end skills for Shopify. Building online shopping portal for a luxury brand.",
-        "list": [{ "item": "Shopify, Liquid" }]
+        "list": [
+          { "item": "Shopify, Liquid, SCSS" },
+          { "item": "jQuery, jQueryUI" }
+        ]
       },
       {
         "class": "six",
@@ -242,6 +245,7 @@
     ]
   },
   "professionalExperienceCont": {
+    "sectiontitle": "Contractor History Continued",
     "experience": [
       {
         "class": "six",

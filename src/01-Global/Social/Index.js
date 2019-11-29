@@ -45,13 +45,17 @@ const SocialLinks = styled.div`
   margin: 18px 0 30px;
   padding: 0;
 
-  & a {
+  a {
     color: ${color.primary};
     margin: 0 0 0 42px;
-  }
+    transition: all 1s;
 
-  & a:first-child {
-    margin-left: 0;
+    &:hover {
+      color: ${color.lightest};
+    }
+    &:first-child {
+      margin-left: 0;
+    }
   }
 `;
 

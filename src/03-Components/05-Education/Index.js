@@ -24,6 +24,8 @@ const Heading = styled.h3`
   line-height: 1.5;
 `;
 
+const ContentBlock = styled.div``;
+
 const Content = styled.p`
   font-size: 16px;
   font-weight: 400;
@@ -48,13 +50,13 @@ const Content = styled.p`
 export const EducationBlock = () => (
   <>
     {education.map(education => (
-      <div key={education.school} className="twelve">
+      <ContentBlock key={education.school}>
         <Heading>{education.school}</Heading>
         <Content>
           {education.degree} <span>&bull;</span>
           <span className="date">{education.graduated}</span>
         </Content>
-      </div>
+      </ContentBlock>
     ))}
   </>
 );

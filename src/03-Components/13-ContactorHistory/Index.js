@@ -24,10 +24,10 @@ class ContractorHistory extends Component {
   render() {
     return (
       <>
-        <section className="section contractor-history">
+        <section className="contractor-history">
           <Hist data={this.state.resumeData.professionalExperience} />
         </section>
-        <section className="section contractor-history-cont">
+        <section className="contractor-history-cont">
           <HistCont data={this.state.resumeData.professionalExperienceCont} />
         </section>
       </>

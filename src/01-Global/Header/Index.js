@@ -8,9 +8,12 @@ const HeaderNav = styled.header`
   font-weight: 400;
   height: 50px;
   letter-spacing: 1.5px;
-  position: fixed;
   width: 100vw;
   z-index: 9;
+
+  &.stuck {
+    position: fixed;
+  }
 
   @media (min-width: 768px) {
     background: rgba(0, 0, 0, 0.5);

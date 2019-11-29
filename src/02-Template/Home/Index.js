@@ -53,14 +53,13 @@ class Template extends Component {
         <GlobalStyle />
 
         <Nav sticky={this.state.stickyNav} />
+        <Hero data={this.state.resumeData.main} />
+
+        <Waypoint
+          onEnter={this._handleWaypointEnter}
+          onLeave={this._handleWaypointLeave}
+        ></Waypoint>
         <main>
-          <Hero data={this.state.resumeData.main} />
-
-          <Waypoint
-            onEnter={this._handleWaypointEnter}
-            onLeave={this._handleWaypointLeave}
-          ></Waypoint>
-
           <About data={this.state.resumeData.main} />
           <Resume data={this.state.resumeData.resume} />
           <Portfolio data={this.state.resumeData.portfolio} />

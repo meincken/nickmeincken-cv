@@ -14,119 +14,90 @@ import styled from "styled-components";
 const API = "./resumeData.json";
 
 const Container = styled.div`
-  background-color: #1e1e1e;
-  color: #e1e1e1;
-  font-size: 16px;
-  font-weight: 400;
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 960px;
+  color: #fff;
+  display: grid;
+  grid-template-columns:
+    [viewport-start] minmax(1em, 1fr)
+    [container-start] minmax(0, 960px) [container-end]
+    minmax(1em, 1fr) [viewport-end];
 
-  @media print {
-    font-weight: 200;
+  .container {
+    grid-column: container;
   }
 
-  .section {
+  ul {
+    padding-left: 20px;
+  }
+
+  .section-title {
+    border-bottom: 1px solid;
+    margin-bottom: 20px;
+
+    @media print {
+      border-bottom: 1px solid #1e1e1e;
+      margin-bottom: 10px;
+    }
+  }
+
+  section {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: space-between;
 
-    @media print {
-      display: block;
-    }
-  }
+    p {
+      margin-top: 0;
+      margin-bottom: 16px;
 
-  strong {
-    font-weight: 400;
-  }
-
-  h2,
-  h3,
-  h4 {
-    font-weight: 400;
-
-    @media print {
-      font-weight: 200;
-    }
-  }
-  h2 {
-    font-size: 28px;
-    border-bottom: 1px solid #fff;
-
-    @media print {
-      font-size: 16px;
-    }
-  }
-
-  h3 {
-    font-size: 24px;
-    @media print {
-      font-size: 14px;
-    }
-  }
-
-  h4 {
-    font-size: 20px;
-
-    @media print {
-      font-size: 10px;
-    }
-  }
-
-  p {
-    margin: 0 0 10px;
-  }
-
-  .twelve,
-  .six {
-    position: relative;
-
-    ul {
-      margin: 0 0 10px 10px;
-      padding: 0;
-    }
-
-    li {
-      margin-left: 20px;
-
-      strong {
-        display: block;
+      @media print {
+        margin-bottom: 10px;
       }
     }
 
-    p span {
+    span,
+    strong {
       display: block;
     }
-  }
 
-  .twelve {
-    flex: 0 0 100%;
+    .twelve {
+      flex: 0 0 100%;
+      max-width: 100%;
 
-    ul {
-      column-count: 2;
+      ul {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+
+        li {
+          flex: 0 0 100%;
+          max-width: 100%;
+
+          @media (min-width: 768px) {
+            flex: 0 0 47%;
+            max-width: 47%;
+          }
+
+          @media print {
+            flex: 0 0 47%;
+            max-width: 47%;
+          }
+        }
+      }
     }
-  }
 
-  .six {
-    flex: 0 0 100%;
+    .six {
+      flex: 0 0 100%;
+      max-width: 100%;
 
-    @media (min-width: 768px) {
-      flex: 0 0 50%;
+      @media (min-width: 768px) {
+        flex: 0 0 48%;
+        max-width: 48%;
+      }
+
+      @media print {
+        flex: 0 0 48%;
+        max-width: 48%;
+      }
     }
-
-    @media print {
-      display: inline-block;
-    }
-  }
-
-  a {
-    color: #a9cc17;
-  }
-
-  dd {
-    margin-left: 0;
   }
 `;
 
@@ -134,7 +105,7 @@ const Footer = styled.footer`
   text-align: center;
 `;
 
-const Header = styled.p`
+const Header = styled.div`
   text-align: center;
 `;
 
@@ -165,16 +136,17 @@ class Template extends Component {
           <meta name="description" content="Helmet application" />
           <body className="CV" />
         </Helmet>
-        <Header className="hidden-print-block">
+        <Header className="container hidden-print-block">
           <button className="print" onClick={() => window.print()}>
             PRINT
           </button>
+          <br />
           <Link className="btn" to="/">
             Home
           </Link>
         </Header>
         <Title data={this.state.resumeData} />
-        <main>
+        <main className="container">
           <PersonalInformation
             data={this.state.resumeData.PersonalInformation}
           />
@@ -182,7 +154,7 @@ class Template extends Component {
           <ContractorHistory />
           <Extras data={this.state.resumeData.softskills} />
         </main>
-        <Footer className="hidden-print-block">
+        <Footer className="container hidden-print-block">
           <p>References available upon request</p>
           <p>©2012-2019 Nick Meincken</p>
         </Footer>
