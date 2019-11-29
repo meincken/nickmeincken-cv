@@ -4,7 +4,7 @@ import Personal from "./personal";
 import Additional from "./additional";
 import Sites from "./sites";
 
-const API = "./cvData.json";
+const API = "./resumeData.json";
 
 class Extra extends Component {
   constructor(props) {
