@@ -22,7 +22,7 @@ Most recently I have expanded my skill set into developing components for AEM, u
 - Spelthorne College, Middlesex (1997) **BTEC Photography & Business Skills**
 - Ashford High School (1994) **6 GCSEs including Maths, English and Science**
 
-## Technical Skills
+### Technical Skills
 
 - Adobe CC
 - CSS and HTML editing using text editor
@@ -34,7 +34,7 @@ Most recently I have expanded my skill set into developing components for AEM, u
 
 ## Contractor History
 
-## Texture London
+### Texture London
 
 **Front End Developer** November 2019 - current
 
@@ -45,7 +45,7 @@ Front end developer role with minimal back end skills for Shopify. Building onli
 - Shopify, Liquid, SCSS
 - jQuery, jQueryUI
 
-## Signal Noise
+### Signal Noise
 
 **Front End Developer** August 2018 - October 2019
 
@@ -57,7 +57,7 @@ Building AEM components for Siemens using postcss and PatternLab. This project c
 - PatternLab, Handlebars
 - React, Bootstrap, GIT
 
-## Pomegranate
+### Pomegranate
 
 **Front End Developer** July 2019 - August 2019
 
@@ -69,7 +69,7 @@ Building components around the bootstrap framework for a Medical website utilisi
 - Handlebars, GIT
 - Bootstrap, HTML templates
 
-## BT
+### BT
 
 **Front End Developer** May 2018 - June 2019
 
@@ -84,7 +84,7 @@ BT is a globally recognized telecoms brand. I have been working as part of the M
 - Email Development/Styleguide
 - Agile, Workfront
 
-## GTA
+### GTA
 
 **Front End Developer** January 2018 - May 2018
 
@@ -97,7 +97,7 @@ GTA Travel have been powering global travel for 40 years. I came on board as par
 - RESTful API, Handlebars, WebPack/Gulp
 - Style guide, Build kit
 
-## Matter of Form
+### Matter of Form
 
 **Front End Developer** May 2017 - October 2017
 
@@ -109,7 +109,7 @@ Working as part of a small agile development team in Old Street on a high qualit
 - Sketch, Handlebars, WebPack
 - Responsive component design
 
-## MerchantCantos
+### MerchantCantos
 
 **Front End Developer** January 2017 - February 2017 & March 2017
 
@@ -121,7 +121,7 @@ Working as part of a small development team building custom websites for corpora
 - Umbraco
 - Responsive design
 
-## Rapha
+### Rapha
 
 **Front End Developer** September 2016 - November 2016
 
@@ -135,7 +135,7 @@ Cleaning up the code base of this prestige clothing brand and general site and p
 - Responsive design
 - Customised jQuery calendar
 
-## We Are Social
+### We Are Social
 
 **Front End Developer** September 2016
 
@@ -149,7 +149,7 @@ Microsite for Blind Pig Cider using Wordpress with custom fields and utilising a
 - PHP, SCSS, jQuery
 - PictureFill, CSS3, HTML5
 
-## Virgin Media
+### Virgin Media
 
 **Front End Developer** November 2009 - August 2016
 
@@ -167,7 +167,7 @@ One of the UK's leading entertainment and communication providers, I was a membe
 - Agile work process
 - Responsive and Adaptive builds
 
-## ANDesign London
+### ANDesign London
 
 **Front End Developer** July 2009 - November 2009
 
@@ -180,7 +180,7 @@ My main focus was working on a client intranet site built using Drupal.
 - Setting up an intranet site using Drupal
 - Client liaison for web queries
 
-## RadleyYeldar London
+### RadleyYeldar London
 
 **Front End Developer** May 2009 - June 2009
 
