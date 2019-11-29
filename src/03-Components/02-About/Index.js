@@ -13,32 +13,29 @@ const Container = styled.section`
   background: ${color.darkest};
   color: ${color.lighter};
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(12, 1fr);
   grid-gap: 10px;
+  min-height: 100vh;
   justify-content: center;
   max-width: 1040px;
   margin: 0 auto;
+  padding: 0 20px;
   overflow: hidden;
-  padding: 40px 20px;
-
-  @media (min-width: 768px) {
-    grid-template-columns: repeat(12, 1fr);
-  }
 
   .box:nth-of-type(1) {
-    grid-column: span 3;
+    grid-column: span 12;
+
+    @media (min-width: 768px) {
+      grid-column: span 3;
+    }
   }
 
   .box:nth-of-type(2) {
-    grid-column: span 9;
-  }
+    grid-column: span 12;
 
-  .contact-details {
-    grid-column: span 6;
-  }
-
-  .download {
-    grid-column: span 6;
+    @media (min-width: 768px) {
+      grid-column: span 9;
+    }
   }
 
   a {
@@ -52,13 +49,27 @@ const Container = styled.section`
   }
 `;
 
+const ContainerInner = styled.section`
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 10px;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+`;
+
 const ProfileImg = styled.img`
   border-radius: 100%;
   display: block;
   height: 120px;
-  margin: 0 auto 30px;
+  margin: 30px auto;
   position: relative;
   width: 120px;
+
+  @media (min-width: 768px) {
+    margin: 0 auto 30px;
+  }
 `;
 
 const LinkStyle = styled(Link)`
@@ -92,7 +103,7 @@ class About extends Component {
         <div className="box">
           <Heading title="About Me" />
           <Content content={bio} />
-          <Container>
+          <ContainerInner>
             <div className="contact-details">
               <Heading title="Contact" />
               <p className="address">
@@ -105,7 +116,7 @@ class About extends Component {
                 <LinkTo title="Online Resume" to="/resume" />
               </p>
             </div>
-          </Container>
+          </ContainerInner>
         </div>
       </Container>
     );

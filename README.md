@@ -1,4 +1,8 @@
-# Nick Meincken - Front end developer
+# Nick Meincken - Front end developer :octocat:
+
+##Contents
+
+-
 
 ## Personal information
 

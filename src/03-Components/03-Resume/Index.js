@@ -19,7 +19,7 @@ const ContainerBlock = styled.article`
   justify-content: center;
   max-width: 1040px;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 60px 20px;
   border-bottom: 1px solid ${color.lighter};
 
   &:last-child {
