@@ -45,7 +45,7 @@ Front end developer role with minimal back end skills for Shopify. Building onli
 - Shopify, Liquid, SCSS
 - jQuery, jQueryUI
 
-<hr style="border-bottom: 0;" />
+<span style="border-bottom: 1px solid #ccc;"></span>
 
 ### Signal Noise
 
