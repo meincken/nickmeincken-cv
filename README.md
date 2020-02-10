@@ -45,9 +45,9 @@ Most recently I have expanded my skill set into developing components for AEM, u
 
 ### Grundfos Denmark
 
-**Front End Engineer\*** December 2019 -
+**Front End Engineer** December 2019 -
 
-Grundfos is a globally recognized company which develops water solutions around the world. Building components for AEM in standard HTM in Sightly but also utilising a custom VueJS front end design system using BEM Atomic Design principles.
+Grundfos is a globally recognised company which develops water solutions around the world. Building components for AEM in standard HTM in Sightly but also utilising a custom VueJS front end design system using BEM Atomic Design principles.
 
 #### Technologies and skills::
 

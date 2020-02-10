@@ -22,7 +22,7 @@
         "company": "Grundfos Denmark",
         "title": "Front End Engineer",
         "years": "December 2019 - ",
-        "description": "Grundfos is a globally recognized company which develops water solutions around the world. Building components for AEM in standard HTM in Sightly but also utilising a custom VueJS front end design system using BEM Atomic Design principles."
+        "description": "Grundfos is a globally recognised company which develops water solutions around the world. Building components for AEM in standard HTM in Sightly but also utilising a custom VueJS front end design system using BEM Atomic Design principles."
       },
       {
         "company": "Texture London",
@@ -191,7 +191,7 @@
         "company": "Grundfos Denmark",
         "role": "Front End Engineer",
         "date": "December 2019 - ",
-        "description": "Grundfos is a globally recognized company which develops water solutions around the world. Building components for AEM in standard HTM in Sightly but also utilising a custom VueJS front end design system using BEM Atomic Design principles.",
+        "description": "Grundfos is a globally recognised company which develops water solutions around the world. Building components for AEM in standard HTM in Sightly but also utilising a custom VueJS front end design system using BEM Atomic Design principles.",
         "list": [
           { "item": "AEM, VueJS, SCSS" },
           { "item": "Atomic BEM" },
