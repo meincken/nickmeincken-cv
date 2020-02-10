@@ -1,7 +1,5 @@
 import React, { Component } from "react";
-import SoftSkills from "./softskills";
 import Personal from "./personal";
-import Additional from "./additional";
 import Sites from "./sites";
 
 const API = "./resumeData.json";
@@ -28,11 +26,9 @@ class Extra extends Component {
     return (
       <section className="misc">
         <div className="six">
-          <SoftSkills data={this.state.resumeData.softskills} />
           <Personal data={this.state.resumeData.personal} />
         </div>
         <div className="six">
-          <Additional data={this.state.resumeData.additional} />
           <Sites data={this.state.resumeData.sites} />
         </div>
       </section>

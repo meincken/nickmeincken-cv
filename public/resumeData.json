@@ -19,9 +19,15 @@
     "skillmessage": "I am a competent Front End Developer with good skills with many frameworks and content management systems. Below is my level of competency with various technologies.",
     "work": [
       {
+        "company": "Grundfos Denmark",
+        "title": "Front End Engineer",
+        "years": "December 2019 - ",
+        "description": "Grundfos is a globally recognized company which develops water solutions around the world. Building components for AEM in standard HTM in Sightly but also utilising a custom VueJS front end design system using BEM Atomic Design principles."
+      },
+      {
         "company": "Texture London",
         "title": "Front End Developer",
-        "years": "November 2019 - ",
+        "years": "November 2019 - December 2019",
         "description": "Building components and pages for Shopify Plus."
       },
       {
@@ -182,9 +188,22 @@
     "experience": [
       {
         "class": "twelve",
+        "company": "Grundfos Denmark",
+        "role": "Front End Engineer",
+        "date": "December 2019 - ",
+        "description": "Grundfos is a globally recognized company which develops water solutions around the world. Building components for AEM in standard HTM in Sightly but also utilising a custom VueJS front end design system using BEM Atomic Design principles.",
+        "list": [
+          { "item": "AEM, VueJS, SCSS" },
+          { "item": "Atomic BEM" },
+          { "item": "Sightly, AEM_Dialog, Sling" },
+          { "item": "node.js, NPM" }
+        ]
+      },
+      {
+        "class": "twelve",
         "company": "Texture London",
         "role": "Front End Developer",
-        "date": "November 2019 - ",
+        "date": "November 2019 - December 2019",
         "description": "Front end developer role with minimal back end skills for Shopify. Building online shopping portal for a luxury brand.",
         "list": [
           { "item": "Shopify, Liquid, SCSS" },
@@ -214,7 +233,12 @@
           { "item": "Handlebars, GIT" },
           { "item": "Bootstrap, HTML templates" }
         ]
-      },
+      }
+    ]
+  },
+  "professionalExperienceCont": {
+    "sectiontitle": "Contractor History Continued",
+    "experience": [
       {
         "class": "twelve",
         "company": "BT",
@@ -241,12 +265,7 @@
             "item": "Agile, Workfront"
           }
         ]
-      }
-    ]
-  },
-  "professionalExperienceCont": {
-    "sectiontitle": "Contractor History Continued",
-    "experience": [
+      },
       {
         "class": "six",
         "company": "GTA Travel",
@@ -346,11 +365,6 @@
     ]
   },
   "sites": [
-    {
-      "url": "http://www.virginmedia.com/",
-      "title": "Virgin Media",
-      "description": "Front end development, Styleguide, Dev toolkit, AEM/CQ5, HTML5, CSS3 and jQuery"
-    },
     {
       "url": "http://www.builtbymoustache.com/",
       "title": "Built By Moustache",
