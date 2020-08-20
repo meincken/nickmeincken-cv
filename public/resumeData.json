@@ -19,9 +19,15 @@
     "skillmessage": "I am a competent Front End Developer with good skills with many frameworks and content management systems. Below is my level of competency with various technologies.",
     "work": [
       {
+        "company": "Crabtree & Evelyn",
+        "title": "Full stack developer",
+        "years": "April 2020 -",
+        "description": ""
+      },
+      {
         "company": "Grundfos Denmark",
         "title": "Front End Engineer",
-        "years": "December 2019 - ",
+        "years": "December 2019 - February 2020",
         "description": "Grundfos is a globally recognised company which develops water solutions around the world. Building components for AEM in standard HTM in Sightly but also utilising a custom VueJS front end design system using BEM Atomic Design principles."
       },
       {
@@ -188,9 +194,22 @@
     "experience": [
       {
         "class": "twelve",
+        "company": "Crabtree & Evelyn",
+        "role": "Full Stack Developer",
+        "date": "April 2020 - current",
+        "description": "Full stack developer, dealing with complete build and deployment of new features for the Crabtree & Evelyn website. Implementing a CI/CD environment for multiple developers to work on the Shopify platform. Advising on best practices in an ever changing ecommerce world.",
+        "list": [
+          { "item": "Shopify, Jira" },
+          { "item": "Git, NPM, Gulp" },
+          { "item": "SCSS, jQuery" },
+          { "item": "CI/CD deployment" }
+        ]
+      },
+      {
+        "class": "six",
         "company": "Grundfos Denmark",
         "role": "Front End Engineer",
-        "date": "December 2019 - ",
+        "date": "December 2019 - February 2020",
         "description": "Grundfos is a globally recognised company which develops water solutions around the world. Building components for AEM in standard HTM in Sightly but also utilising a custom VueJS front end design system using BEM Atomic Design principles.",
         "list": [
           { "item": "AEM, VueJS, SCSS" },
@@ -200,7 +219,7 @@
         ]
       },
       {
-        "class": "twelve",
+        "class": "six",
         "company": "Texture London",
         "role": "Front End Developer",
         "date": "November 2019 - December 2019",
